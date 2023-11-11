@@ -98,11 +98,15 @@ header{
 }
 
 /* Media Query */
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .hero-content-container{
         flex-direction: column;
     }
     #hero-header{
         font-size: 3.5rem;
+    }
+
+    .aside-article:not(:last-child){
+        margin-bottom: 1em;
     }
 }
