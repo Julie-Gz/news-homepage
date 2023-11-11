@@ -1,0 +1,208 @@
+:root{
+    /* Aside header and aside subtitle hover */
+    --SoftOrange: hsl(35, 77%, 62%);
+    /* Button BG, menu and article hover */
+    --SoftRed: hsl(5, 85%, 63%);
+    /* article subtitles and button text on hover */
+    --OffWhite: hsl(36, 100%, 99%);
+    /* Numbers */
+    --GrayishBlue: hsl(233, 8%, 79%);
+    /* Paragraphs */
+    --DarkGrayishBlue: hsl(236, 13%, 42%);
+    /* article background and button background on hover and h1*/
+    --VeryDarkBlue: hsl(240, 100%, 5%);
+}
+
+@font-face {
+    font-family: "InterRegular";
+    src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "InterBold";
+    src: url("./assets/fonts/static/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "InterExtraBold";
+    src: url("./assets/fonts/static/Inter-ExtraBold.ttf") format("truetype");
+}
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    min-height: 100vh;
+}
+
+html,body{
+    overflow-x: hidden;
+
+}
+
+h1{
+    font-family: "InterExtraBold";
+}
+
+h2{
+    font-family: "InterBold";
+}
+
+h3{
+    font-family: "InterBold";
+}
+
+p,a{
+    font-family: "InterRegular";
+}
+
+button{
+    display: block;
+}
+
+/* Accents */
+#hero-header--accent,.article-header--accent{
+    color: var(--VeryDarkBlue);
+}
+
+.btn--accent{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "InterRegular";
+    background-color: var(--SoftRed);
+    color: var(--OffWhite);   
+}
+
+.text--accent, .menu-link--accent{
+    color: var(--DarkGrayishBlue);
+}
+
+.number--accent{
+    color: var(--GrayishBlue);
+    font-size: 2.5rem;
+}
+
+.aside-title--accent{
+    color: var(--SoftOrange);
+}
+
+.aside-header--accent{
+    color: var(--OffWhite);
+}
+
+.aside-text.text--accent{
+    color: var(--GrayishBlue);
+}
+
+/* Hover */
+.menu-link--accent:hover, .aside-header--accent:hover, .article-header--accent:hover{
+    color: var(--SoftOrange);
+}
+
+.btn:hover, .btn:active{
+    background-color: var(--VeryDarkBlue);
+    color: var(--OffWhite);
+}
+
+/* Elements */
+small, small a{
+    font-size: 11px;
+    font-family: "InterRegular";
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img, hr{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+picture img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.btn{
+    display: block;
+    width: 12rem;
+    border: none;
+    outline: none;
+    padding: 1em;
+    transition: all 0.3s ease;
+}
+
+.logo{
+    width: 50px;
+}
+
+/* Header */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-link{
+    cursor: pointer;
+}
+
+/* Aside */
+#aside{
+    background-color: var(--VeryDarkBlue);
+    color: var(--OffWhite);
+    padding: 2em;
+}
+
+.aside-article{
+    margin: 2em 0;
+}
+
+.aside-article:last-of-type{
+    margin-bottom: 0;
+}
+
+.aside-title{
+    color: var(--SoftOrange);
+}
+
+.aside-header{
+    margin-bottom: 0.6em;
+}
+
+/* Article */
+.article-number{
+    font-family: "InterBold";
+}
+
+.article{
+    display: flex;
+}
+
+.article-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Attribution */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
